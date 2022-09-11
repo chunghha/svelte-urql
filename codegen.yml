@@ -1,0 +1,28 @@
+schema: ./src/gql/schema.graphql
+documents: ./src/gql/**/*.graphql
+#hooks:
+#  afterOneFileWrite:
+#    - eslint --fix
+config:
+  scalars:
+    Long: number
+  defaultScalarType: never
+  useTypeImports: true
+generates:
+  src/gql/schema.ts:
+    plugins:
+      - typescript
+      - typescript-urql-graphcache
+  src/gql/:
+    preset: near-operation-file
+    presetConfig:
+      baseTypesPath: schema.ts
+      extension: .ts
+    config:
+      preResolveTypes: false
+    plugins:
+      - typescript-operations
+      - typed-document-node
+  src/gql/introspection.ts:
+    plugins:
+      - urql-introspection
