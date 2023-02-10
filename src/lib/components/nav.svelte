@@ -6,6 +6,7 @@
 	<div class="navbar-start">
 		<div class="dropdown">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<label tabindex="0" class="btn btn-ghost btn-circle">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +22,7 @@
 					/></svg
 				>
 			</label>
+			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul
 				tabindex="0"
 				class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 font-poppins shadow"
