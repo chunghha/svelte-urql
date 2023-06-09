@@ -3,8 +3,8 @@ module.exports = {
 	theme: {
 		extends: {},
 		fontFamily: {
-			inter: ['inter', 'sans-serif'],
-			poppins: ['poppins', 'serif'],
+			'nunito-sans': ['nunito-sans', 'sans-serif'],
+			lora: ['lora', 'serif'],
 			'fira-mono': ['fira-mono']
 		}
 	},
