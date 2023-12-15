@@ -3,14 +3,15 @@ module.exports = {
 	theme: {
 		extends: {},
 		fontFamily: {
-			'nunito-sans': ['nunito-sans', 'sans-serif'],
+			'nunito-sans': ['Nunito Sans', 'sans-serif'],
 			lora: ['lora', 'serif'],
-			'fira-mono': ['fira-mono']
+			'fira-mono': ['Fira Mono', 'monospace']
 		}
 	},
 	plugins: [require('@tailwindcss/typography'), require('daisyui')],
 	// daisyUI config (optional)
 	daisyui: {
+		logs: false,
 		themes: [
 			{
 				dawn: {
